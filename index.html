@@ -4,13 +4,8 @@
 <title>Molly Johnson</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
 <style>
 .parallax {
     /* The image used */
@@ -33,52 +28,81 @@
 <body style="height:1500px">
 
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Molly Amanda</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+<nav class="navbar navbar-light bg-faded">
+  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+  <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+    <a class="navbar-brand" href="#">Navbar</a>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">Contact</a></li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="responsiveNavbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu" aria-labelledby="responsiveNavbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
     </ul>
+    <form class="form-inline float-lg-right">
+      <input class="form-control" type="text" placeholder="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
   </div>
-</div>
 </nav>
 
-<div class="jumbotron">
   <br><br><br>
   <center>
+    <img src="mylogo.jpg" alt="some_text" style="width:304px;height:228px;">
     <h1>Molly Amanda</h1>
-  <p>Photography -- Web Design -- UX Design</p>
 </center>
 
-<div class="parallax"></div>
 
 <div class="container" style="margin-top:50px">
-  <h3>A little about me...</h3>
-  <div class="row">
-    <div class="col-md-4">
-      <p>UX Designer</p>
-      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
-    </div>
-    <div class="col-md-4">
-      <p>Web Designer</p>
-      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
-    </div>
-    <div class="col-md-4">
-      <p>Photographer</p>
-      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+
+  <a id="more"></a>
+  <hr>
+  <div class="card-deck-wrapper">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">UX Design</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Look at Designs</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Web Design</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Look at Web Examples</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Photography</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go to Portfolio</a>
+        </div>
+      </div>
+
+
     </div>
   </div>
+  <!--/row-->
+
 </div>
 </div>
 
